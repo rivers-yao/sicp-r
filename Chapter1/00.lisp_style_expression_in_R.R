@@ -19,3 +19,15 @@ sum_of_squares(3, 4)
 # Constructing further procedures by using sum_of_squares as a building block
 `<-`(f, function(a) sum_of_squares( `+`(a, 1), `*`(a, 2)))
 f(5)
+
+# Condition
+# (define (abs x)
+#   (cond (( > x 0) x)
+#         (( = x 0) 0)
+#         (( < x 0) (- x))))
+`<-`(abs, function(x) {
+  if(x > 0) x 
+  else if(x == 0) 0
+  else if(x < 0) -x
+})
+
